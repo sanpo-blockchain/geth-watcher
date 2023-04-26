@@ -53,7 +53,7 @@ Restart GETH if the check of the block number is NG for the number of consecutiv
 - `command.start` - Full path of the GETH startup shell script.<br>
   For example - `/home/ubuntu/start.sh`
 - `command.stop` - Full path of the GETH shutdown shell script.<br>
-  For example - `/home/ubuntu/stot.sh`
+  For example - `/home/ubuntu/stop.sh`
 
 ## License
 
