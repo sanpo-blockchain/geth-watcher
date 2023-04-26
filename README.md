@@ -30,7 +30,7 @@ recommended system requirements:
 set -u
 set -e
 
-nohup geth --datadir ./data --nodiscover --syncmode full --allow-insecure-unlock --mine --miner.threads 1 --unlock 0 --password passwords.txt --ethstats monitorID:sanpo@127.0.0.18:53000 2>>./data/gethlog &
+nohup geth --datadir ./data --nodiscover --syncmode full --allow-insecure-unlock --mine --miner.threads 1 --unlock 0 --password passwords.txt --ws --ws.addr localhost --ws.api admin,db,eth,debug,miner,net,shh,txpool,personal,web3 --ws.port 8546 --ws.origins "*" --ws.rpcprefix "/ws" --ethstats monitorID:sanpo@127.0.0.18:53000 2>>./data/gethlog &
 ```
 - shutdown shell script
 ```
