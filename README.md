@@ -36,7 +36,7 @@ nohup geth --datadir ./data --nodiscover --syncmode full --allow-insecure-unlock
 ```
 #!/bin/bash
 
-ps aux | grep geth | grep -v grep | awk '{print "kill -INT", $2}' | sh
+ps aux | grep geth | grep datadir | awk '{print "kill -INT", $2}' | sh
 ```
 
 ### Environment Variables.
